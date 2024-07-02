@@ -1,0 +1,22 @@
+uuid: e23ed0dc-8c19-45af-b306-7b23a4c0de62
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.movie_review
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.movie_review.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: movie_review
+label: 'Add Review'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

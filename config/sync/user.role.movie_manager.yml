@@ -1,0 +1,17 @@
+uuid: 0b7e9e07-01f4-4d8c-b5aa-766cd2a1714b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.movie
+  module:
+    - node
+id: movie_manager
+label: 'Movie Manager'
+weight: 4
+is_admin: null
+permissions:
+  - 'create movie content'
+  - 'delete own movie content'
+  - 'edit any movie content'
+  - 'edit own movie content'

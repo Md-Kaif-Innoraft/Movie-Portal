@@ -1,0 +1,32 @@
+uuid: 7023d2e5-8150-407a-b688-f4aa7047ebcb
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.add_review.body
+    - field.field.node.add_review.field_movie
+    - node.type.add_review
+  module:
+    - text
+    - user
+id: node.add_review.teaser
+targetEntityType: node
+bundle: add_review
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_movie: true

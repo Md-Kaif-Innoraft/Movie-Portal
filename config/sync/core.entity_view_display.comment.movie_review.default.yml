@@ -1,0 +1,27 @@
+uuid: f5d806a9-4b37-49e3-9ce9-2083f022c1a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.movie_review
+    - field.field.comment.movie_review.comment_body
+  module:
+    - text
+id: comment.movie_review.default
+targetEntityType: comment
+bundle: movie_review
+mode: default
+content:
+  comment_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

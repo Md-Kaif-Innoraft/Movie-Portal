@@ -1,0 +1,84 @@
+uuid: 53bb89ac-e813-4695-995a-99eb85a3b2d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.top_10_list.body
+    - field.field.node.top_10_list.field_movies
+    - node.type.top_10_list
+    - views.view.movie_block_top_list
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          65ee4a25-fb4a-404f-8a85-e924496df9d6:
+            uuid: 65ee4a25-fb4a-404f-8a85-e924496df9d6
+            region: content
+            configuration:
+              id: 'field_block:node:top_10_list:body'
+              label: 'Top 10 List Body'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          5d5c4a06-b235-4407-85dc-4e10e0aede93:
+            uuid: 5d5c4a06-b235-4407-85dc-4e10e0aede93
+            region: content
+            configuration:
+              id: 'views_block:movie_block_top_list-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.top_10_list.default
+targetEntityType: node
+bundle: top_10_list
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_movies:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

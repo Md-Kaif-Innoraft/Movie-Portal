@@ -1,0 +1,85 @@
+uuid: 24303452-99c6-48f7-bc2e-220eb05f108a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - node.type.page
+    - views.view.latest_reviews
+    - views.view.recent_list
+  module:
+    - layout_builder
+    - quicktabs
+    - text
+    - user
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          06a123ae-59db-4b92-8a7f-75363f57397f:
+            uuid: 06a123ae-59db-4b92-8a7f-75363f57397f
+            region: first
+            configuration:
+              id: 'views_block:recent_list-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          34192b5e-16b8-4ee4-8538-2c6386aa3056:
+            uuid: 34192b5e-16b8-4ee4-8538-2c6386aa3056
+            region: second
+            configuration:
+              id: 'views_block:latest_reviews-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          9b17f116-921e-486b-953a-f94480d1d385:
+            uuid: 9b17f116-921e-486b-953a-f94480d1d385
+            region: first
+            configuration:
+              id: 'quicktabs_block:news_quick'
+              label: 'QuickTabs - News Quick'
+              label_display: '0'
+              provider: quicktabs
+              context_mapping: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+hidden: {  }

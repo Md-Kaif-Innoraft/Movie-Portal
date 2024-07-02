@@ -1,0 +1,8 @@
+uuid: 2f095f8f-b1d9-4e27-9427-53a549b48a70
+langcode: en
+status: true
+dependencies: {  }
+id: add-news
+label: 'Add News'
+description: ''
+locked: false

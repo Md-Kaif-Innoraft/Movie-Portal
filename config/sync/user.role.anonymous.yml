@@ -1,0 +1,28 @@
+uuid: 33e2661e-53e1-4096-a030-6e8c23b8e2c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+    - node.type.add_review
+  module:
+    - comment
+    - contact
+    - filter
+    - node
+    - search
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'create add_review content'
+  - 'delete own add_review content'
+  - 'search content'
+  - 'use text format restricted_html'
