@@ -1,0 +1,43 @@
+uuid: cd4f1961-faa6-481b-9ec9-93b61511ec65
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.add
+  module:
+    - system
+    - user
+  theme:
+    - olivero
+id: olivero_addmovie
+theme: olivero
+region: social
+weight: -7
+provider: null
+plugin: 'system_menu_block:add'
+settings:
+  id: 'system_menu_block:add'
+  label: 'Add Movie'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      movie_manager: movie_manager
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
+  response_status:
+    id: response_status
+    negate: false
+    status_codes:
+      - 200

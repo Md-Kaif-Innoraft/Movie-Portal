@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+langcode: en
+uuid: 4f90ab4e-5cca-4695-9c35-8bfe9aed1c59
+name: 'Movie Portal'
+mail: kaif.ansari@innoraft.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/14
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null

@@ -1,0 +1,12 @@
+uuid: 16e75fb7-cf8b-412a-8802-0204ed348930
+langcode: en
+status: true
+dependencies: {  }
+id: contact_us
+label: 'Contact Us'
+recipients:
+  - kaif.ansari@innoraft.com
+reply: ''
+weight: 0
+message: ''
+redirect: ''

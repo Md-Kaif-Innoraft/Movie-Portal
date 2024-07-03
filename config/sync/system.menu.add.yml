@@ -1,0 +1,8 @@
+uuid: 8b2bfff7-1a08-438b-ba17-63beaad14665
+langcode: en
+status: true
+dependencies: {  }
+id: add
+label: 'Add Movie'
+description: ''
+locked: false

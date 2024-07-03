@@ -1,0 +1,24 @@
+uuid: 2000017f-e4f2-4cd5-b89e-a4bcd81ff0d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.add_review
+  module:
+    - text
+id: node.add_review.body
+field_name: body
+entity_type: node
+bundle: add_review
+label: 'Add Review'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

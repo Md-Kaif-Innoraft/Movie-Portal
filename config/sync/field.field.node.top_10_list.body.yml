@@ -1,0 +1,24 @@
+uuid: 13dd7623-6803-40fa-809f-6e8f2a9728df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.top_10_list
+  module:
+    - text
+id: node.top_10_list.body
+field_name: body
+entity_type: node
+bundle: top_10_list
+label: 'Top 10 List Body'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary
